@@ -1,3 +1,5 @@
 # Work_Raspi_Kiosk
 Work_Raspi_Kiosk
-bash <(wget -qO- )
+
+Install :
+bash <(wget -qO- https://raw.githubusercontent.com/felix068/Work_Raspi_Kiosk/main/Install.sh)
