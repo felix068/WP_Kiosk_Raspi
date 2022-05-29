@@ -1,4 +1,4 @@
-# Work_Raspi_Kiosk
+# Working_Raspi_Kiosk
 
 ## Install :
 ```
