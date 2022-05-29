@@ -13,7 +13,7 @@ confirm()
             ;;
     esac
 }
-if confirm "Are you sure to install the program?"; then
+if confirm "Are you sure to install the program ?"; then
     sudo apt-get update & sudo apt-get full-upgrade -y
     echo "The software will install..."
     sudo apt-get install xserver-xorg-input-evdev xinput-calibrator xorg unclutter chromium-browser -y
@@ -37,4 +37,23 @@ if confirm "Are you sure to install the program?"; then
     echo "The operation was done !"
 else
     echo "The operation was canceled by the user."
+fi
+
+confirm()
+{
+    read -r -p "${1} [Y/n] " answer
+    case "$answer" in
+        [yY][eE][sS]|[yY]) 
+            true
+            ;;
+        *)
+            false
+            ;;
+    esac
+}
+if confirm "Do you want to restart ?"; then
+    echo "Reboot."
+    sudo reboot
+else
+    echo "The operation was canceled."
 fi
