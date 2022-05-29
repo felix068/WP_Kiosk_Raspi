@@ -1,13 +1,9 @@
 #!/bin/bash
-
 echo 
 echo "== Confirmation... =="
-echo 
-
 confirm()
 {
     read -r -p "${1} [Y/n] " answer
-
     case "$answer" in
         [yY][eE][sS]|[yY]) 
             true
@@ -17,7 +13,6 @@ confirm()
             ;;
     esac
 }
-
 if confirm "Are you sure to install the program?"; then
     sudo apt-get update & sudo apt-get full-upgrade -y
     echo "The software will install..."
