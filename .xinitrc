@@ -4,7 +4,7 @@ xset s off
 xset s noblank
 
 unclutter -idle 0.08 -root -noevents &
-chromium-browser https://github.com/felix068/WP_Kiosk_Raspi \
+chromium-browser https://github.com/felix068/WP_Kiosk_Raspi/ \
   --window-size=800,480 \
   --window-position=0,0 \
   --start-fullscreen \
