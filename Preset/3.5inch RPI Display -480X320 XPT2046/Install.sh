@@ -36,6 +36,9 @@ if confirm "Are you sure to install the program ?"; then
     cd LCD-show/
     sudo ./LCD35-show
     
+    sudo rm /usr/share/X11/xorg.conf.d/99-fbturbo.conf
+    sudo rm /etc/X11/xorg.conf.d/99-calibration.conf 
+    
     echo -e "\033[31m Setting Xorg (X11) \033[0m"
     sleep 3
     sudo nano /etc/X11/xorg.conf.d/98-dietpi-disable_dpms.conf
