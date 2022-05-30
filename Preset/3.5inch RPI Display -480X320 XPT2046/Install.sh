@@ -45,7 +45,7 @@ if confirm "Are you sure to install the program ?"; then
     echo -e "\033[31m Setting your screen resolution and chromium argument \033[0m"
     cd /home/pi/
     sudo rm .xinitrc
-    sudo wget ""https://raw.githubusercontent.com/felix068/WP_Kiosk_Raspi/main/Preset/3.5inch%20RPI%20Display%20-480X320%20XPT2046/.xinitrc""
+    sudo wget "https://raw.githubusercontent.com/felix068/WP_Kiosk_Raspi/main/Preset/3.5inch%20RPI%20Display%20-480X320%20XPT2046/.xinitrc"
     echo -e "\033[31m The operation was done ! \033[0m"
     cd /home/pi/
 else
