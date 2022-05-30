@@ -22,7 +22,6 @@ if confirm "Are you sure to install the program ?"; then
     sudo rm /home/pi/.xinitrc
     cd /home/pi/
     sudo wget https://raw.githubusercontent.com/felix068/Working_Raspi_Kiosk/main/.profile
-    sudo wget https://raw.githubusercontent.com/felix068/Working_Raspi_Kiosk/main/.xinitrc
     cd /
     sudo wget https://raw.githubusercontent.com/felix068/Working_Raspi_Kiosk/main/st.sh
     echo -e "\033[31m The program setting your config file \033[0m"
