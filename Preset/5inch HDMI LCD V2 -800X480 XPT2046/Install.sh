@@ -28,10 +28,10 @@ if confirm "Are you sure to install the program ?"; then
     echo -e "\033[31m The program setting your config file \033[0m"
     sudo rm /boot/config.txt
     cd /boot/
-    sudo wget ""https://raw.githubusercontent.com/felix068/WP_Kiosk_Raspi/main/Preset/5inch%20HDMI%20LCD%20V2%20-800X480%20(XPT2046%20Touch%20Controller)/config.txt""
+    sudo wget ""https://raw.githubusercontent.com/felix068/WP_Kiosk_Raspi/main/Preset/5inch%20HDMI%20LCD%20V2%20-800X480%20XPT2046/config.txt""
     echo -e "\033[31m The program setting Xorg (X11) \033[0m"
     cd /etc/X11/xorg.conf.d/
-    sudo wget ""https://raw.githubusercontent.com/felix068/WP_Kiosk_Raspi/main/Preset/5inch%20HDMI%20LCD%20V2%20-800X480%20(XPT2046%20Touch%20Controller)/98-dietpi-disable_dpms.conf""
+    sudo wget ""https://raw.githubusercontent.com/felix068/WP_Kiosk_Raspi/main/Preset/5inch%20HDMI%20LCD%20V2%20-800X480%20XPT2046/98-dietpi-disable_dpms.conf""
     echo -e "\033[31m The program setting your screen resolution and chromium argument \033[0m"
     echo -e "\033[31m The operation was done ! \033[0m"
     cd /home/pi
