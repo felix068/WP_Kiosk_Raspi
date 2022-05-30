@@ -1,4 +1,4 @@
-# Working_Raspi_Kiosk
+# WP_Kiosk_Raspi
 
 ## Install :
 
