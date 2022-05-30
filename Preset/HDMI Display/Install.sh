@@ -25,17 +25,11 @@ if confirm "Are you sure to install the program ?"; then
     sudo wget https://raw.githubusercontent.com/felix068/Working_Raspi_Kiosk/main/.xinitrc
     cd /
     sudo wget https://raw.githubusercontent.com/felix068/Working_Raspi_Kiosk/main/st.sh
-    echo -e "\033[31m Setting your config file \033[0m"
-    sleep 3
-    sudo nano /boot/config.txt
-    echo -e "\033[31m Setting Xorg (X11) \033[0m"
-    sleep 3
-    sudo nano /etc/X11/xorg.conf.d/98-dietpi-disable_dpms.conf
     echo -e "\033[31m Setting your screen resolution and chromium argument \033[0m"
     sleep 3
     sudo nano /home/pi/.xinitrc
     echo -e "\033[31m The operation was done ! \033[0m"
-    cd /home/pi/
+    cd /home/pi
 else
     echo "The operation was canceled by the user."
 fi
