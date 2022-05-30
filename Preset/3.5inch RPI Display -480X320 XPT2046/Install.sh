@@ -38,6 +38,7 @@ if confirm "Are you sure to install the program ?"; then
     sudo wget ""https://raw.githubusercontent.com/felix068/WP_Kiosk_Raspi/main/Preset/3.5inch%20RPI%20Display%20-480X320%20XPT2046/.xinitrc""
     echo -e "\033[31m The operation was done ! \033[0m"
     cd /home/pi/
+else
     echo "The operation was canceled by the user."
 fi
 
