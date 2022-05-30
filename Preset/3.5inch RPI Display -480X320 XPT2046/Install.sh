@@ -27,7 +27,7 @@ if confirm "Are you sure to install the program ?"; then
     echo -e "\033[31m The program setting your config file \033[0m"
     sudo rm /boot/config.txt
     cd /boot/
-    sudo wget ""https://raw.githubusercontent.com/felix068/WP_Kiosk_Raspi/main/Preset/3.5inch%20RPI%20Display%20-480X320%20XPT2046/config.txt""
+    sudo wget "https://raw.githubusercontent.com/felix068/WP_Kiosk_Raspi/main/Preset/3.5inch%20RPI%20Display%20-480X320%20XPT2046/config.txt"
     
     cd /home/pi/
     sudo rm -rf LCD-show
