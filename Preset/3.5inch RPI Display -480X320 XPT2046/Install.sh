@@ -29,15 +29,9 @@ if confirm "Are you sure to install the program ?"; then
     cd /boot/
     sudo wget "https://raw.githubusercontent.com/felix068/WP_Kiosk_Raspi/main/Preset/3.5inch%20RPI%20Display%20-480X320%20XPT2046/config.txt"
     
-    cd /home/pi/
-    sudo rm -rf LCD-show
-    git clone https://github.com/goodtft/LCD-show.git
-    chmod -R 755 LCD-show
-    cd LCD-show/
-    sudo ./LCD35-show
+
     
-    sudo rm /usr/share/X11/xorg.conf.d/99-fbturbo.conf
-    sudo rm /etc/X11/xorg.conf.d/99-calibration.conf 
+
     
     echo -e "\033[31m Setting Xorg (X11) \033[0m"
     sleep 3
@@ -48,6 +42,16 @@ if confirm "Are you sure to install the program ?"; then
     sudo wget "https://raw.githubusercontent.com/felix068/WP_Kiosk_Raspi/main/Preset/3.5inch%20RPI%20Display%20-480X320%20XPT2046/.xinitrc"
     echo -e "\033[31m The operation was done ! \033[0m"
     cd /home/pi/
+    
+    sudo rm -rf LCD-show
+    git clone https://github.com/goodtft/LCD-show.git
+    chmod -R 755 LCD-show
+    cd LCD-show/
+    sudo ./LCD35-show
+    
+    sudo rm /usr/share/X11/xorg.conf.d/99-fbturbo.conf
+    sudo rm /etc/X11/xorg.conf.d/99-calibration.conf 
+    
 else
     echo "The operation was canceled by the user."
 fi
