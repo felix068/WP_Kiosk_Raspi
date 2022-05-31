@@ -51,9 +51,10 @@ if confirm "Are you sure to install the program ?"; then
     
     sudo mkdir Tscreen
     cd Tscreen
-    sudo wget "https://raw.githubusercontent.com/felix068/WP_Kiosk_Raspi/main/Preset/3.5inch%20RPI%20Display%20-480X320%20XPT2046/LCD-show-master.zip"
-    sudo unzip LCD-show-master.zip
-    cd LCD-show-master
+    sudo rm -rf LCD-show
+    git clone https://github.com/goodtft/LCD-show.git
+    chmod -R 755 LCD-show
+    cd LCD-show/
     sudo ./LCD35-show
     
     sudo rm /usr/share/X11/xorg.conf.d/99-fbturbo.conf
