@@ -43,13 +43,13 @@ if confirm "Are you sure to install the program ?"; then
     echo -e "\033[31m The operation was done ! \033[0m"
     cd /home/pi/
     
-    sudo mkdir Tscreen
-    cd Tscreen
-    sudo rm -rf LCD-show
-    git clone https://github.com/goodtft/LCD-show.git
-    chmod -R 755 LCD-show
-    cd LCD-show/
-    sudo ./LCD35-show
+    #sudo mkdir Tscreen
+    #cd Tscreen
+    #sudo rm -rf LCD-show
+    #git clone https://github.com/goodtft/LCD-show.git
+    #chmod -R 755 LCD-show
+    #cd LCD-show/
+    #sudo ./LCD35-show
     
     sudo rm /usr/share/X11/xorg.conf.d/99-fbturbo.conf
     sudo rm /etc/X11/xorg.conf.d/99-calibration.conf 
