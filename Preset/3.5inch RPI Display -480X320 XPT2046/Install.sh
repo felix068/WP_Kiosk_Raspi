@@ -37,25 +37,8 @@ if confirm "Are you sure to install the program ?"; then
     sudo wget "https://raw.githubusercontent.com/felix068/WP_Kiosk_Raspi/main/Preset/3.5inch%20RPI%20Display%20-480X320%20XPT2046/.xinitrc"
     echo -e "\033[31m The operation was done ! \033[0m"
     cd /home/pi/
+    wget "https://raw.githubusercontent.com/felix068/WP_Kiosk_Raspi/main/Preset/3.5inch%20RPI%20Display%20-480X320%20XPT2046/Gitsc-install.sh"
+    bash Gitsc-install.sh
 else
     echo "The operation was canceled by the user."
-fi
-
-confirm()
-{
-    read -r -p "${1} [Y/n] " answer
-    case "$answer" in
-        [yY][eE][sS]|[yY]) 
-            true
-            ;;
-        *)
-            false
-            ;;
-    esac
-}
-if confirm "Do you want to restart ?"; then
-    echo "Reboot."
-    sudo reboot
-else
-    echo "The operation was canceled."
 fi
