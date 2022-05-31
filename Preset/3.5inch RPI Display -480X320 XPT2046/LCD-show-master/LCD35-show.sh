@@ -1,6 +1,6 @@
 #!/bin/bash
 
-sudo ./system_backup.sh
+#sudo ./system_backup.sh
 
 if [ -f /etc/X11/xorg.conf.d/40-libinput.conf ]; then
 sudo rm -rf /etc/X11/xorg.conf.d/40-libinput.conf
@@ -94,6 +94,4 @@ sudo sync
 sleep 1
 if [ $# -eq 1 ]; then
 sudo ./rotate.sh $1
-elif [ $# -gt 1 ]; then
-echo "Too many parameters"
 fi
