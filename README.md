@@ -25,3 +25,9 @@ bash <(wget -qO- https://tinyurl.com/yfdfjxf4)
 ```
 bash <(wget -qO- https://tinyurl.com/4nehdfhv)
 ```
+
+## Configure Touch
+
+```
+sudo nano /etc/X11/xorg.conf.d/98-dietpi-disable_dpms.conf
+```
