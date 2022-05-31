@@ -10,7 +10,7 @@ bash <(wget -qO- https://raw.githubusercontent.com/felix068/Work_Raspi_Kiosk/mai
 ```
 
 ## Install 3.5inch RPI Display -480X320 XPT2046 :
-(not working at the moment !)
+
 ```
 bash <(wget -qO- https://tinyurl.com/4h5cr4zm)
 ```
