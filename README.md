@@ -14,6 +14,7 @@ bash <(wget -qO- https://raw.githubusercontent.com/felix068/Work_Raspi_Kiosk/mai
 ```
 bash <(wget -qO- https://tinyurl.com/4h5cr4zm)
 ```
+After restarting, type the following command :
 ```
 bash <(wget -qO- https://tinyurl.com/yfdfjxf4)
 ```
