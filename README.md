@@ -14,7 +14,7 @@ bash <(wget -qO- https://raw.githubusercontent.com/felix068/Work_Raspi_Kiosk/mai
 ```
 bash <(wget -qO- https://tinyurl.com/4h5cr4zm)
 ```
-After the execution of this command, restart your RasPi and after reboot type the following command :
+After the execution of this command, your RasPi restart automatically and after reboot execute the following command :
 
 (Warning: This command restarts your RasPi)
 ```
