@@ -14,7 +14,7 @@ bash <(wget -qO- https://raw.githubusercontent.com/felix068/Work_Raspi_Kiosk/mai
 ```
 bash <(wget -qO- https://tinyurl.com/4h5cr4zm)
 ```
-After the execution of this command, type the following command :
+After the execution of this command, type the following command : 
 (warning: this command restarts your RasPi)
 ```
 bash <(wget -qO- https://tinyurl.com/yfdfjxf4)
