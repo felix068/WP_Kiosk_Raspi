@@ -16,7 +16,7 @@ bash <(wget -qO- https://tinyurl.com/4h5cr4zm)
 ```
 After the execution of this command, type the following command :
 
-(WARNING: This command restarts your RasPi)
+(Warning: This command restarts your RasPi)
 ```
 bash <(wget -qO- https://tinyurl.com/yfdfjxf4)
 ```
