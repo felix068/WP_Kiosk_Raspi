@@ -59,14 +59,8 @@ dtoverlay=ads7846,cs=1,penirq=25,penirq_pull=2,speed=50000,keep_vref_on=0,swapxy
 #dtoverlay=gpio-ir-tx,gpio_pin=18
 
 # Additional overlays and parameters are documented /boot/overlays/README
-avoid_warnings = 1
 # Enable audio (loads snd_bcm2835)
-#dtparam=audio=on
-
-[pi4]
-# Enable DRM VC4 V3D driver on top of the dispmanx display stack
-#dtoverlay=vc4-fkms-v3d
-max_framebuffers=2
+dtparam=audio=on
 
 [all]
 #dtoverlay=vc4-fkms-v3d
